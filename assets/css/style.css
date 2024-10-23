@@ -5,22 +5,24 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Paytone One", sans-serif; */
 }
 :root {
   --bg-color: #000;
   --text-color: #fff;
   --sc-color: #ffe3eb;
   --main-color: #acc8fa;
-  --big-font: 6rem;
+  --big-font: 4rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
+  --main-font: "Poppins", sans-serif;
+  --sc-font: "Paytone One", sans-serif;
 }
 body {
   background: var(--bg-color);
   color: var(--text-color);
 }
-header {
+.header {
   position: fixed;
   top: 0;
   right: 0;
@@ -36,8 +38,9 @@ header {
   font-size: 25px;
   color: var(--sc-color);
   font-weight: 600;
+  font-family: var(--main-font);
 }
-.nav {
+.navbar {
   display: flex;
 }
 .navbar a {
@@ -45,4 +48,41 @@ header {
   font-size: var(--p-font);
   font-weight: 500;
   padding: 10px 22px;
+  border-radius: 4px;
+  font-family: var(--main-font);
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+header,
+section {
+  padding: 80px 10%;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/iren.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--text-color);
+  letter-spacing: 4px;
+  font-family: var(--sc-font);
+  max-width: 500px;
+  margin-bottom: 5px;
+}
+.home-text h2,
+p {
+  /* font-size: 20px; */
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 5px;
+  font-family: var(--main-font);
 }

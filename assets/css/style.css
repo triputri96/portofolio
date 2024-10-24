@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   /* font-family: "Paytone One", sans-serif; */
 }
+
 :root {
   --bg-color: #000;
   --text-color: #fff;
@@ -33,6 +34,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  transition: ease 0.4s;
 }
 .logo {
   font-size: 25px;
@@ -85,4 +87,11 @@ p {
   line-height: 38px;
   margin-bottom: 5px;
   font-family: var(--main-font);
+}
+
+/* scroll */
+.header.sticky {
+  background: var(--bg-color);
+  padding: 10px 10%;
+  box-shadow: rgba(44, 48, 54, 0.781) 0px 10px 10px -10px;
 }

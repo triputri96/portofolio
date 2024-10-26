@@ -10,8 +10,7 @@
 :root {
   --bg-color: #000;
   --text-color: #fff;
-  --sc-color: #ffe3eb;
-  --main-color: #acc8fa;
+  --sc-color: #acc8fa;
   --big-font: 4rem;
   --h2-font: 3rem;
   --p-font: 1.1rem;
@@ -51,7 +50,7 @@ body {
   border-radius: 4px;
 }
 .navbar a:hover {
-  color: var(--main-color);
+  color: var(--sc-color);
 }
 /* header */
 header,
@@ -114,7 +113,7 @@ nav.sticky {
   font-size: var(--h2-font);
 }
 span {
-  color: var(--main-color);
+  color: var(--sc-color);
 }
 .about-content p {
   font-size: var(--p-font);

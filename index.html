@@ -1,127 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio</title>
+    <!-- link bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+      <!-- link icon -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- link css -->
+    <link rel="stylesheet" href="asset/css/style.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
   </head>
   <body>
-    <nav class="header">
-      <img src="/assets/img/logo.png" alt="" class="logo" />
-      <!-- <a href="#" class="logo">Putri.</a> -->
-      <div class="navbar">
-        <div>
-          <a href="#home" class="active">Home</a>
-          <a href="#about">About</a>
-          <a href="#favorite">My Favorite</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <!-- home -->
-    <header class="home" id="home">
-      <div class="home-text">
-        <h1>Ni Ketut Putri Antari</h1>
-        <h2>2401050001</h2>
-        <p>2024</p>
-      </div>
-    </header>
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="/assets/img/img8.png" alt="" />
-      </div>
-      <div class="about-content">
-        <h1 class="heading">About <span>Me</span></h1>
-        <p>
-          Hai, Perkenalkan Aku Putri dengan NIM 2401050001 jurusan Desain Grafis
-          dan Animasi. Hobi membaca dan menggambar.
-        </p>
-      </div>
-    </section>
-    <!-- favorite -->
-    <section class="container" id="favorite">
-      <div class="text">
-        <h1>My Favorite</h1>
-        <img src="assets/img/img2.jpg" alt="" />
-      </div>
-      <div class="row-items">
-        <div class="container-img">
-          <ul>
-            <li>
-              <img src="/assets/img/cat.jpg" alt="kucing" />
-              <p>Kucing</p>
+    <nav class="navbar navbar-expand-lg px-120 py-3 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/asset/img/logo.png" alt="" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
-            <li>
-              <img src="/assets/img/sakura.jpg" alt="sakura" />
-              <p>Anime</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li>
-              <img src="/assets/img/eat.jpg" alt="masbro" />
-              <p>Makan</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#favorite">My Favorite</a>
             </li>
-            <li>
-              <img src="/assets/img/tidur.jpg" alt="mingyu" />
-              <p>Tidur</p>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
-    </section>
-    <!-- contact -->
-    <section id="contact" class="contact">
-      <div class="contact-text">
-        <h1>Contact</h1>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3440741141976!2d115.23645337321184!3d-8.658789488099158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24062d4012285%3A0xe6f92de1119768d4!2sKampus%20Alfa%20Prima!5e0!3m2!1sid!2sid!4v1730860406765!5m2!1sid!2sid"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="social-media">
-        <div class="address">
-          <h3>Address</h3>
-          <a href="https://maps.app.goo.gl/ULUkAnKeiCp3g8Tz7" target="_blank">
-            <p>
-              Jl. Hayam Wuruk, Sumerta Kelod, Kec. Denpasar Tim., Kota Denpasar
-            </p>
-          </a>
-        </div>
-        <div class="email">
-          <h3>Email</h3>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=antariputri26@gmail.com"
-            target="_blank">
-            <p>antariputri26@gmail.com</p>
-          </a>
-        </div>
-        <div class="phone">
-          <h3>Phone</h3>
-          <a href="https://wa.me/+6287817950964" target="_blank">
-            <p>087817950964</p>
-          </a>
+    </nav>
+    <header id="home" class="home px-120 py-5">
+      <div class="description">
+        <h1>Hi, I'm Putri Antari</h1>
+        <p>2401050001</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsam minus temporibus eos cupiditate voluptatem aliquid obcaecati, ad, esse molestiae tempore eius vel omnis optio, dolores debitis natus facere ratione?</p>
+        <div class="button">
+          <button type="button" class="btn btn-outline-blue"><a href="#about" class="text-decoration-none">More About Me</a></button>
         </div>
       </div>
+    </header>
+    <section id="about" class="px-120 py-5">
+      <h2 class="text-center pb-3">
+        ABOUT ME
+      </h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="asset/img/img8.png" alt="" class="my-img">
+        </div>
+        <div class="col-xl">
+          <h3>Ni Ketut Putri Antari</h3>
+          <p >Graphic Designer</p>
+          <p>Hai, aku Putri dari jurusan Desain Grafis dan Animasi. Aku seorang grafik desainer yang memiliki minat besar dalam menciptakan karya visual yang menarik dan komunikatif. Aku bercita-cita menjadi desainer profesional yang tidak hanya bekerja di industri kreatif, tetapi juga mampu membuka bisnis desain sendiri di masa depan.</p>
+         <div class="button">
+          <button type="button" class="btn btn-outline-blue"><a href="#gallery" class="text-decoration-none">My Gallery</a></button>
+        </div>
+        </div>
     </section>
-    <!-- footer -->
-    <footer>
-      <p>Copyright &copy;2024 All rights reserved | Made by Putri</p>
+    <section id="favorite" class="px-120 pt-5">
+      <h2 class="text-center pb-4">
+        MY FAVORITE
+      </h2>
+<div class="favorite">
+    <div class="row">
+      <div class="col text-center img-hover">
+        <img src="asset/img/tidur.jpg" alt="" class="favorite-things mb-2">
+        <p>Tidur</p>
+      </div>
+      <div class="col text-center img-hover">
+        <img src="asset/img/sakura.jpg" alt="" class="favorite-things mb-2">
+        <p>Anime</p>
+      </div>
+      <div class="col text-center img-hover">
+        <img src="asset/img/cat.jpg" alt="" class="favorite-things mb-2">
+        <p>Kucing</p>
+      </div>
+      <div class="col text-center img-hover">
+        <img src="asset/img/eat.jpg" alt="" class="favorite-things mb-2">
+        <p>Makan</p>
+      </div>
+    </div>
+</div>
+    </section>
+    <section id="gallery" class="px-120 py-5">
+  <h2 class="text-center pb-3">GALLERY</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/besakih.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/iren.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/img6.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/img5.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/besakih.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card text-center" style="width: 100%;">
+          <img src="asset/img/besakih.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ab?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="px-120 py-5">
+  <h2 class="text-center pb-3">CONTACT</h2>
+  <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15777.376981839881!2d115.22057413497686!3d-8.658773143919172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24062d4012285%3A0xe6f92de1119768d4!2sKampus%20Alfa%20Prima!5e0!3m2!1sid!2sid!4v1733285428450!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col ms-5">
+                    <div class="mb-3">
+                        <i class="bi bi-telephone-fill pe-1"></i> 087817950964
+                    </div>
+                    <div class="mb-3"><i class="bi bi-envelope pe-1"></i> antariputri26@gmail.com</div>
+                    <div class="mb-3"><i class="bi bi-instagram pe-1"></i> <a href="https://www.instagram.com/just.putri_o/" style="text-decoration: none;">@just.putri_o</a></div>
+                    <div class="mb-3"><i class="bi bi-github pe-1"></i> <a href="https://github.com/triputri96/" style="text-decoration: none;">triputri96</a></div>
+                </div>
+            </div>
+        </div>
+</section>
+<footer class="text-center pb-4">
+        <div class="">Copyright &copy;2024 All rights reserved | Made by Putri</div>
     </footer>
-    <script src="/assets/js/script.js"></script>
+<script src="asset/js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
   </body>
 </html>
